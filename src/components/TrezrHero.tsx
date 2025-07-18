@@ -23,15 +23,15 @@ const TrezrHero = () => {
               <div className="space-y-4">
                 <h1 className="text-5xl lg:text-7xl font-bold leading-tight tracking-tight">
                   <span className="text-white font-extrabold">
-                    Turn Money Into
+                    Wealth That Grows
                   </span>
                   <br />
                   <span className="gradient-primary bg-clip-text text-transparent font-black">
-                    Your Favorite
+                    With Every Good
                   </span>
                   <br />
                   <span className="gradient-gold bg-clip-text text-transparent font-black italic">
-                    Game
+                    Habit.
                   </span>
                 </h1>
                 
@@ -42,8 +42,7 @@ const TrezrHero = () => {
                     <span className="text-primary font-bold"> real wealth building</span>.
                   </p>
                   <p className="text-lg text-white/70 max-w-xl">
-                    Every habit completed earns points. Every point builds wealth. 
-                    Every level unlocks financial freedom.
+                    Every bill paid. Every rupee saved. Every smart choice rewarded.
                   </p>
                 </div>
               </div>
