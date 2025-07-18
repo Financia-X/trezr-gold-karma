@@ -158,43 +158,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Partners Section */}
-        <Card className="glass-card border-border p-6 mb-8">
-          <h4 className="font-semibold mb-4 text-center">Trusted Partners</h4>
-          <div className="flex flex-wrap justify-center items-center gap-6 text-sm text-muted-foreground">
-            {partners.map((partner, index) => (
-              <span key={index} className="hover:text-foreground transition-colors duration-200">
-                {partner}
-              </span>
-            ))}
-          </div>
-        </Card>
-
-        {/* Regulatory Compliance */}
-        <Card className="glass-card border-primary/20 p-6 mb-8">
-          <div className="flex items-start gap-4">
-            <Shield className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-            <div className="space-y-2">
-              <h4 className="font-semibold flex items-center gap-2">
-                Regulatory Compliance
-                <Badge variant="outline" className="border-primary/30 text-primary">
-                  RBI Compliant
-                </Badge>
-              </h4>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Trezr Technologies Pvt. Ltd. is registered with the Reserve Bank of India (RBI) 
-                and follows all applicable guidelines for digital payments and financial services. 
-                Your investments are secured through NSDL and all transactions are processed 
-                through RBI-approved payment gateways.
-              </p>
-              <div className="flex flex-wrap gap-4 text-xs text-muted-foreground">
-                <span>• NBFC License: IN-NBFC-2024-001234</span>
-                <span>• CIN: U65920KA2023PTC123456</span>
-                <span>• GST: 29ABCDE1234F1Z5</span>
-              </div>
-            </div>
-          </div>
-        </Card>
 
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 border-t border-border">

@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Star, Quote } from "lucide-react";
 
 const Testimonials = () => {
@@ -17,7 +18,7 @@ const Testimonials = () => {
     {
       name: "Rohit G.",
       age: 28,
-      profession: "Marketing Manager",
+      profession: "Marketing Manager", 
       location: "Mumbai",
       quote: "Need some help for tracking my credit cards.",
       story: "Managing multiple credit cards and their due dates is overwhelming. I want something that helps me pay on time and maybe even rewards me for it.",
@@ -27,12 +28,52 @@ const Testimonials = () => {
     {
       name: "Ananya P.",
       age: 26,
-      profession: "Content Creator",
+      profession: "Designer",
       location: "Delhi",
       quote: "I love rewards but couldn't invest due to lack of knowledge.",
       story: "I want to start investing but don't know where to begin. Also, where did all my money go this month? I need a financial buddy to guide me.",
       need: "Investment Guide",
       avatar: "AP"
+    },
+    {
+      name: "Karan M.",
+      age: 29,
+      profession: "Consultant",
+      location: "Pune",
+      quote: "Couldn't invest due to lack of time.",
+      story: "I'm always busy with work and don't have time to research investments. I need something that invests for me automatically.",
+      need: "Auto Investing",
+      avatar: "KM"
+    },
+    {
+      name: "Sneha T.",
+      age: 25,
+      profession: "Teacher",
+      location: "Chennai",
+      quote: "Didn't know where to invest.",
+      story: "There are so many investment options - SIP, FD, Gold, ETF. I get confused and end up not investing at all. Need simple guidance.",
+      need: "Clear Guidance",
+      avatar: "ST"
+    },
+    {
+      name: "Arjun K.",
+      age: 30,
+      profession: "Engineer",
+      location: "Hyderabad",
+      quote: "Don't know where my money is gone.",
+      story: "Every month I wonder where all my salary went. I need better expense tracking and insights into my spending habits.",
+      need: "Expense Tracking",
+      avatar: "AK"
+    },
+    {
+      name: "Isha R.",
+      age: 27,
+      profession: "Product Manager",
+      location: "Gurgaon",
+      quote: "Need a financial buddy.",
+      story: "Managing finances feels lonely and overwhelming. I want an AI assistant that understands my goals and guides me like a friend.",
+      need: "AI Guidance",
+      avatar: "IR"
     }
   ];
 
@@ -48,53 +89,50 @@ const Testimonials = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 border-primary/30 text-primary">
-            💬 We Heard You
+            💬 This is what users wanted - we heard you
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            This Is What Users Wanted
+            What Users Wanted
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Real pain points from real people. We're building the solution you've been asking for.
+            Real feedback from real people who needed a better financial companion.
           </p>
         </div>
 
-        {/* User Needs Grid */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        {/* User Stories Collage */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-16">
           {userNeeds.map((user, index) => (
-            <Card key={index} className="glass-card border-destructive/20 hover:scale-105 transition-all duration-300 group">
+            <Card key={index} className={`glass-card border-border hover:border-primary/30 transition-all duration-300 hover:scale-105 ${
+              index % 7 === 0 ? 'md:col-span-2' : 
+              index % 5 === 0 ? 'lg:row-span-2' : ''
+            }`}>
               <CardContent className="p-6">
-                {/* Quote Icon */}
-                <Quote className="h-8 w-8 text-destructive mb-4 group-hover:text-primary transition-colors duration-300" />
+                <div className="flex items-start gap-4 mb-4">
+                  <Avatar className="border-2 border-primary/30">
+                    <AvatarFallback className="gradient-primary text-primary-foreground font-bold">
+                      {user.avatar}
+                    </AvatarFallback>
+                  </Avatar>
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2 mb-1">
+                      <h4 className="font-semibold">{user.name}</h4>
+                      <span className="text-sm text-muted-foreground">• {user.age}</span>
+                    </div>
+                    <p className="text-sm text-muted-foreground">{user.profession} • {user.location}</p>
+                  </div>
+                </div>
                 
-                {/* Main Quote */}
-                <blockquote className="text-lg font-bold mb-4 text-destructive">
+                <blockquote className="text-lg font-medium mb-3 leading-relaxed">
                   "{user.quote}"
                 </blockquote>
                 
-                {/* Story */}
-                <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
+                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
                   {user.story}
                 </p>
                 
-                {/* Need Badge */}
-                <Badge variant="outline" className="border-primary/30 text-primary mb-4">
+                <Badge className="gradient-secondary border-secondary/30">
                   {user.need}
                 </Badge>
-                
-                {/* User Info */}
-                <div className="flex items-center gap-3 pt-4 border-t border-border">
-                  <div className="w-10 h-10 rounded-full bg-muted flex items-center justify-center">
-                    <span className="text-sm font-bold text-muted-foreground">
-                      {user.avatar}
-                    </span>
-                  </div>
-                  <div>
-                    <div className="font-semibold">{user.name}, {user.age}</div>
-                    <div className="text-xs text-muted-foreground">
-                      {user.profession} • {user.location}
-                    </div>
-                  </div>
-                </div>
               </CardContent>
             </Card>
           ))}

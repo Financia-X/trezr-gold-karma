@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Sparkles, TrendingUp, Shield, Zap } from "lucide-react";
-import heroMockup from "@/assets/hero-mockup.jpg";
+import heroMockup from "@/assets/hero-app-mockup.jpg";
 
 const TrezrHero = () => {
   return (
@@ -69,13 +69,16 @@ const TrezrHero = () => {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
-              <Button size="lg" className="gradient-primary hover:scale-[1.02] transition-all duration-300 px-8 py-6 text-lg font-semibold animate-glow">
-                Start My Journey
-              </Button>
-              <Button variant="outline" size="lg" className="border-primary/30 hover:bg-primary/10 px-8 py-6 text-lg">
-                Join the Waitlist
-              </Button>
+            <div className="flex justify-center lg:justify-start">
+              <form action="https://formspree.io/f/xwpbggnw" method="POST" className="w-full max-w-md">
+                <Button 
+                  type="submit"
+                  size="lg" 
+                  className="gradient-primary hover:scale-[1.02] transition-all duration-300 px-8 py-6 text-lg font-semibold animate-glow w-full"
+                >
+                  Join the Waitlist
+                </Button>
+              </form>
             </div>
 
             {/* Habit Building Features */}
@@ -101,7 +104,7 @@ const TrezrHero = () => {
               <img 
                 src={heroMockup} 
                 alt="Trezr App Interface" 
-                className="w-full max-w-lg mx-auto rounded-3xl shadow-2xl mix-blend-multiply dark:mix-blend-screen opacity-90"
+                className="w-full max-w-lg mx-auto rounded-3xl shadow-2xl"
               />
             </div>
             

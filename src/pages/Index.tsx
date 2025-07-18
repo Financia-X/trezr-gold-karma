@@ -1,5 +1,6 @@
 import TrezrHero from "@/components/TrezrHero";
 import ProblemSolution from "@/components/ProblemSolution";
+import SectionSeparator from "@/components/SectionSeparator";
 import FeaturesGrid from "@/components/FeaturesGrid";
 import HowItWorks from "@/components/HowItWorks";
 import MicroinvestingPower from "@/components/MicroinvestingPower";
@@ -13,12 +14,19 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <TrezrHero />
+      <SectionSeparator />
       <ProblemSolution />
+      <SectionSeparator />
       <FeaturesGrid />
+      <SectionSeparator />
       <HowItWorks />
+      <SectionSeparator />
       <MicroinvestingPower />
+      <SectionSeparator />
       <HabitEngine />
+      <SectionSeparator />
       <Testimonials />
+      <SectionSeparator />
       <ComparisonTable />
       <FinalCTA />
       <Footer />

@@ -55,16 +55,12 @@ const FinalCTA = () => {
             🚀 Your Financial Evolution Starts Now
           </Badge>
           <h2 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-            It's not just about
+            Ready to Experience the
             <br />
-            <span className="gradient-primary bg-clip-text text-transparent">your money.</span>
-            <br />
-            It's about your
-            <br />
-            <span className="gradient-gold bg-clip-text text-transparent">evolution.</span>
+            <span className="gradient-primary bg-clip-text text-transparent">Difference?</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Join thousands who've already started their journey to financial freedom.
+            Be among the first to experience the future of finance.
             Smart habits. Real rewards. Lasting wealth.
           </p>
         </div>
@@ -93,17 +89,6 @@ const FinalCTA = () => {
                   ))}
                 </div>
 
-                {/* Trust Indicators */}
-                <div className="pt-6 border-t border-border">
-                  <div className="grid grid-cols-2 gap-3">
-                    {trustIndicators.map((indicator, index) => (
-                      <div key={index} className="flex items-center gap-2">
-                        <Shield className="h-4 w-4 text-secondary" />
-                        <span className="text-sm text-muted-foreground">{indicator}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
               </div>
 
               {/* Right: Sign Up Form */}
@@ -139,13 +124,6 @@ const FinalCTA = () => {
                     Join the Movement
                   </Button>
                   
-                  <Button 
-                    variant="outline" 
-                    size="lg" 
-                    className="w-full border-secondary/30 hover:bg-secondary/10"
-                  >
-                    Download Beta App
-                  </Button>
                 </div>
 
                 {/* Bonus */}
@@ -168,28 +146,8 @@ const FinalCTA = () => {
           </CardContent>
         </Card>
 
-        {/* Social Proof */}
+        {/* Final Quote */}
         <div className="text-center space-y-8">
-          <div className="flex flex-wrap justify-center items-center gap-8 text-muted-foreground">
-            <div className="flex items-center gap-2">
-              <Users className="h-5 w-5" />
-              <span className="text-sm">10,000+ Users</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <TrendingUp className="h-5 w-5" />
-              <span className="text-sm">₹2.5Cr+ Wealth Created</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Star className="h-5 w-5" />
-              <span className="text-sm">4.8/5 Rating</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Shield className="h-5 w-5" />
-              <span className="text-sm">Bank-Grade Security</span>
-            </div>
-          </div>
-
-          {/* Final Quote */}
           <div className="max-w-3xl mx-auto">
             <blockquote className="text-2xl lg:text-3xl font-bold leading-relaxed">
               <span className="text-muted-foreground">"</span>
