@@ -38,35 +38,41 @@ const TrezrHero = () => {
         </Card>
       </div>
 
-      <div className="container relative z-10 mx-auto px-4">
+      <div className="container relative z-10 mx-auto px-4 pt-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="text-center lg:text-left space-y-8">
-            <div className="space-y-4">
+            <div className="space-y-6">
               <div className="inline-flex items-center gap-2 bg-primary/20 px-4 py-2 rounded-full border border-primary/30">
                 <Zap className="h-4 w-4 text-primary animate-pulse" />
                 <span className="text-sm font-medium">AI-Powered Finance</span>
               </div>
               
-              <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-                <span className="gradient-primary bg-clip-text text-transparent">
-                  Wealth That Grows
-                </span>
-                <br />
-                <span className="text-foreground">With Every Good Habit.</span>
-              </h1>
-              
-              <p className="text-xl lg:text-2xl text-muted-foreground max-w-2xl">
-                Build wealth through small, consistent habits.
-                <br />
-                <span className="gradient-gold bg-clip-text text-transparent font-semibold">
-                  Every bill paid. Every rupee saved. Every smart choice rewarded.
-                </span>
-              </p>
-              
-              <p className="text-lg text-muted-foreground">
-                Your AI-powered financial companion that turns good habits into real wealth.
-              </p>
+              <div className="space-y-4">
+                <h1 className="text-5xl lg:text-7xl font-bold leading-tight tracking-tight">
+                  <span className="gradient-primary bg-clip-text text-transparent font-extrabold">
+                    Wealth That Grows
+                  </span>
+                  <br />
+                  <span className="text-foreground font-light">With Every Good</span>
+                  <br />
+                  <span className="gradient-gold bg-clip-text text-transparent font-black italic">
+                    Habit.
+                  </span>
+                </h1>
+                
+                <div className="space-y-3">
+                  <p className="text-xl lg:text-2xl text-muted-foreground max-w-2xl font-light">
+                    Build wealth through small, consistent habits.
+                  </p>
+                  <p className="text-lg lg:text-xl gradient-gold bg-clip-text text-transparent font-semibold">
+                    Every bill paid. Every rupee saved. Every smart choice rewarded.
+                  </p>
+                  <p className="text-base lg:text-lg text-muted-foreground font-normal">
+                    Your AI-powered financial companion that turns good habits into real wealth.
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div className="flex justify-center lg:justify-start">

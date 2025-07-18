@@ -11,9 +11,9 @@ const ProblemSolution = () => {
             💸 Finance is broken for our generation
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Most apps <span className="text-muted-foreground">track your money.</span>
+            The Problem: <span className="text-destructive">Finance Apps Are Boring & Complex</span>
             <br />
-            Trezr <span className="gradient-primary bg-clip-text text-transparent">transforms your behavior.</span>
+            The Solution: <span className="gradient-primary bg-clip-text text-transparent">Make Finance Fun & Social</span>
           </h2>
         </div>
 

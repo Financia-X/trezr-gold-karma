@@ -10,16 +10,16 @@ const HowItWorks = () => {
       title: "Connect your bank & cards",
       description: "Secure, instant connection to all your financial accounts. Bank-grade encryption keeps everything safe.",
       details: "• Link multiple banks & cards\n• Complete data privacy\n• Real-time sync",
-      color: "text-primary",
-      bgColor: "border-primary/20"
+      color: "text-secondary",
+      bgColor: "border-secondary/20"
     },
     {
       icon: Wallet,
       title: "Spend & Save like you normally do",
       description: "No behavior change needed. Trezr works silently in the background, analyzing and optimizing.",
       details: "• Automatic round-ups\n• Smart categorization\n• Habit tracking",
-      color: "text-secondary",
-      bgColor: "border-secondary/20"
+      color: "text-primary",
+      bgColor: "border-primary/20"
     },
     {
       icon: TrendingUp,

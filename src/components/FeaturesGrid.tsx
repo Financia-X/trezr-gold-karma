@@ -80,9 +80,9 @@ const FeaturesGrid = () => {
         },
         {
           icon: Trophy,
-          title: "Streaks + Challenges",
-          description: "Gamified missions that make good habits addictive and profitable",
-          highlight: "Finance finally feels fun"
+          title: "Community Leaderboard",
+          description: "Compete with friends and see who's building wealth the smartest. Anonymous rankings keep it fun.",
+          highlight: "Social wealth building"
         },
         {
           icon: Coins,
@@ -127,10 +127,10 @@ const FeaturesGrid = () => {
             ✨ Features That Transform
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Not just an app.
+            Finance Finally Feels Like
             <br />
             <span className="gradient-primary bg-clip-text text-transparent">
-              Your financial evolution.
+              Your favorite game.
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
