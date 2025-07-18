@@ -35,17 +35,17 @@ const Navbar = () => {
           <NavigationMenu className="hidden md:flex">
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuLink className="px-4 py-2 hover:text-primary transition-colors cursor-pointer">
+                <NavigationMenuLink href="#features" className="px-4 py-2 hover:text-primary transition-colors cursor-pointer">
                   Features
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuLink className="px-4 py-2 hover:text-primary transition-colors cursor-pointer">
+                <NavigationMenuLink href="#how-it-works" className="px-4 py-2 hover:text-primary transition-colors cursor-pointer">
                   How it Works
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuLink className="px-4 py-2 hover:text-primary transition-colors cursor-pointer">
+                <NavigationMenuLink href="#testimonials" className="px-4 py-2 hover:text-primary transition-colors cursor-pointer">
                   Testimonials
                 </NavigationMenuLink>
               </NavigationMenuItem>
@@ -55,6 +55,7 @@ const Navbar = () => {
           {/* CTA Button */}
           <div className="flex items-center gap-4">
             <form action="https://formspree.io/f/xwpbggnw" method="POST" className="hidden sm:block">
+              <input type="email" name="email" placeholder="Enter email" required className="hidden" />
               <Button 
                 type="submit"
                 size="sm" 
@@ -90,6 +91,7 @@ const Navbar = () => {
                 Testimonials
               </a>
               <form action="https://formspree.io/f/xwpbggnw" method="POST" className="px-4">
+                <input type="email" name="email" placeholder="Enter email" required className="hidden" />
                 <Button 
                   type="submit"
                   size="sm" 

@@ -17,22 +17,24 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <TrezrHero />
+      
+      <SectionSeparator />
       <CommunityLeaderboard />
       
       <SectionSeparator />
       <ProblemSolution />
       
       <SectionSeparator />
-      <FeaturesGrid />
-      
-      <SectionSeparator />
       <HowItWorks />
       
       <SectionSeparator />
-      <MicroinvestingPower />
+      <FeaturesGrid />
       
       <SectionSeparator />
       <HabitEngine />
+      
+      <SectionSeparator />
+      <MicroinvestingPower />
       
       <SectionSeparator />
       <Testimonials />

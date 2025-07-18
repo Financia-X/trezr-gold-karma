@@ -127,15 +127,10 @@ const FeaturesGrid = () => {
             ✨ Features That Transform
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Finance Finally Feels Like
-            <br />
             <span className="gradient-primary bg-clip-text text-transparent">
-              Your favorite game.
+              Four powerful systems working together to make you richer, smarter, and more financially confident.
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Four powerful systems working together to make you richer, smarter, and more financially confident.
-          </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
