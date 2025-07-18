@@ -17,9 +17,10 @@ const ProblemSolution = () => {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Problem Side */}
-          <div className="space-y-6">
+        <div className="relative">
+          <div className="grid lg:grid-cols-2 gap-12 items-start lg:items-center">
+            {/* Problem Side */}
+            <div className="space-y-6">
             <div className="text-center lg:text-left">
               <h3 className="text-2xl font-bold text-destructive mb-6 flex items-center gap-3">
                 <AlertTriangle className="h-7 w-7" />
@@ -48,11 +49,14 @@ const ProblemSolution = () => {
           </div>
 
           {/* Arrow */}
-          <div className="hidden lg:flex justify-center">
+          <div className="flex lg:hidden justify-center my-8">
+            <div className="w-16 h-0.5 bg-gradient-to-r from-destructive to-secondary rounded-full"></div>
+          </div>
+          <div className="hidden lg:flex justify-center items-center absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
             <div className="relative">
-              <ArrowRight className="h-16 w-16 text-primary animate-pulse" />
-              <div className="absolute inset-0 h-16 w-16 text-primary/30 animate-ping">
-                <ArrowRight className="h-16 w-16" />
+              <ArrowRight className="h-12 w-12 text-primary animate-pulse" />
+              <div className="absolute inset-0 h-12 w-12 text-primary/20 animate-ping">
+                <ArrowRight className="h-12 w-12" />
               </div>
             </div>
           </div>
@@ -95,6 +99,7 @@ const ProblemSolution = () => {
               </div>
             </Card>
           </div>
+        </div>
         </div>
       </div>
     </section>

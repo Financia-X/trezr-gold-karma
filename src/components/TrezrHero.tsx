@@ -50,22 +50,22 @@ const TrezrHero = () => {
               
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
                 <span className="gradient-primary bg-clip-text text-transparent">
-                  Do Good.
+                  Wealth That Grows
                 </span>
                 <br />
-                <span className="text-foreground">Get Rich.</span>
+                <span className="text-foreground">With Every Good Habit.</span>
               </h1>
               
               <p className="text-xl lg:text-2xl text-muted-foreground max-w-2xl">
-                Your fallen angel for every financial good deed.
+                Build wealth through small, consistent habits.
                 <br />
                 <span className="gradient-gold bg-clip-text text-transparent font-semibold">
-                  Pay on time. Invest early. Build wealth. Earn gold.
+                  Every bill paid. Every rupee saved. Every smart choice rewarded.
                 </span>
               </p>
               
               <p className="text-lg text-muted-foreground">
-                Trezr rewards every responsible step you take.
+                Your AI-powered financial companion that turns good habits into real wealth.
               </p>
             </div>
 
@@ -78,35 +78,36 @@ const TrezrHero = () => {
               </Button>
             </div>
 
-            {/* Stats */}
+            {/* Habit Building Features */}
             <div className="flex flex-wrap gap-8 justify-center lg:justify-start text-center">
               <div>
-                <div className="text-2xl font-bold gradient-gold bg-clip-text text-transparent">2.5%</div>
-                <div className="text-sm text-muted-foreground">Avg Gold Cashback</div>
+                <div className="text-2xl font-bold gradient-gold bg-clip-text text-transparent">Auto</div>
+                <div className="text-sm text-muted-foreground">Habit Tracking</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-secondary">10K+</div>
-                <div className="text-sm text-muted-foreground">Beta Users</div>
+                <div className="text-2xl font-bold text-secondary">Smart</div>
+                <div className="text-sm text-muted-foreground">Micro-investing</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-primary">₹50L+</div>
-                <div className="text-sm text-muted-foreground">Wealth Created</div>
+                <div className="text-2xl font-bold text-primary">Real</div>
+                <div className="text-sm text-muted-foreground">Gold Rewards</div>
               </div>
             </div>
           </div>
 
           {/* Right Mockup */}
           <div className="relative">
-            <div className="relative z-10">
+            <div className="relative z-10 bg-gradient-to-br from-background/10 to-background/5 backdrop-blur-sm rounded-3xl border border-primary/20">
               <img 
                 src={heroMockup} 
                 alt="Trezr App Interface" 
-                className="w-full max-w-lg mx-auto rounded-3xl shadow-2xl border border-primary/20"
+                className="w-full max-w-lg mx-auto rounded-3xl shadow-2xl mix-blend-multiply dark:mix-blend-screen opacity-90"
               />
             </div>
             
-            {/* Glow Effect */}
-            <div className="absolute inset-0 gradient-primary opacity-20 blur-3xl rounded-3xl" />
+            {/* Enhanced Glow Effect */}
+            <div className="absolute inset-0 gradient-primary opacity-30 blur-3xl rounded-3xl animate-pulse" />
+            <div className="absolute inset-0 gradient-hero opacity-10 blur-2xl rounded-3xl" />
           </div>
         </div>
       </div>

@@ -89,46 +89,6 @@ const HowItWorks = () => {
           ))}
         </div>
 
-        {/* Results Section */}
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-          <div>
-            <h3 className="text-3xl font-bold mb-6">
-              The Results Speak
-              <br />
-              <span className="gradient-gold bg-clip-text text-transparent">For Themselves</span>
-            </h3>
-            
-            <div className="space-y-4">
-              {[
-                { metric: "₹2,50,000", description: "Average wealth created in first year" },
-                { metric: "15+ points", description: "Credit score improvement in 6 months" },
-                { metric: "2.5%", description: "Additional returns through gold rewards" },
-                { metric: "85%", description: "Users pay bills on time consistently" }
-              ].map((stat, index) => (
-                <div key={index} className="flex items-center gap-4 p-4 glass-card border-border rounded-lg">
-                  <div className="text-2xl font-bold gradient-primary bg-clip-text text-transparent">
-                    {stat.metric}
-                  </div>
-                  <div className="text-muted-foreground">
-                    {stat.description}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <Card className="gradient-hero p-8 border-primary/30 text-center">
-            <h4 className="text-2xl font-bold text-primary-foreground mb-4">
-              Ready to Transform Your Financial Life?
-            </h4>
-            <p className="text-primary-foreground/80 mb-6">
-              Join thousands who've already started their journey to financial freedom.
-            </p>
-            <Button size="lg" variant="secondary" className="w-full">
-              Start Your Journey Today
-            </Button>
-          </Card>
-        </div>
       </div>
     </section>
   );

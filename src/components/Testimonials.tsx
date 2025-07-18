@@ -3,35 +3,35 @@ import { Badge } from "@/components/ui/badge";
 import { Star, Quote } from "lucide-react";
 
 const Testimonials = () => {
-  const testimonials = [
+  const userNeeds = [
     {
-      name: "Priya Sharma",
+      name: "Priya S.",
       age: 24,
       profession: "Software Engineer",
       location: "Bangalore",
-      quote: "Feels like my money has a coach now.",
-      story: "I used to stress about every expense. Now Trezr guides me, rewards me for good choices, and I've built ₹45,000 in just 8 months without even thinking about it.",
-      goldEarned: "₹1,240",
+      quote: "Typical banking apps are too old and user unfriendly.",
+      story: "I need something that actually helps me understand my spending patterns and guides me towards better financial decisions, not just shows me numbers.",
+      need: "Better UX",
       avatar: "PS"
     },
     {
-      name: "Rohit Gupta",
+      name: "Rohit G.",
       age: 28,
       profession: "Marketing Manager",
       location: "Mumbai",
-      quote: "I got rewarded for paying my credit card bill? Game-changer.",
-      story: "My credit score went from 680 to 745 in 6 months. Plus I earn gold every time I pay on time. It's like getting paid to be responsible!",
-      goldEarned: "₹890",
+      quote: "Need some help for tracking my credit cards.",
+      story: "Managing multiple credit cards and their due dates is overwhelming. I want something that helps me pay on time and maybe even rewards me for it.",
+      need: "Credit Help",
       avatar: "RG"
     },
     {
-      name: "Ananya Patel",
+      name: "Ananya P.",
       age: 26,
       profession: "Content Creator",
       location: "Delhi",
-      quote: "No more guilt. Just smart habits and real returns.",
-      story: "My irregular income used to make budgeting impossible. Julia AI adapted to my freelance lifestyle and helped me save ₹80,000 for my first home down payment.",
-      goldEarned: "₹2,150",
+      quote: "I love rewards but couldn't invest due to lack of knowledge.",
+      story: "I want to start investing but don't know where to begin. Also, where did all my money go this month? I need a financial buddy to guide me.",
+      need: "Investment Guide",
       avatar: "AP"
     }
   ];
@@ -47,52 +47,51 @@ const Testimonials = () => {
     <section className="py-24 relative">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 border-gold/30 text-gold">
-            💬 Beta Love & Real Results
+          <Badge variant="outline" className="mb-4 border-primary/30 text-primary">
+            💬 We Heard You
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            What Our Users Say
+            This Is What Users Wanted
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Real people, real results, real wealth created through better financial habits.
+            Real pain points from real people. We're building the solution you've been asking for.
           </p>
         </div>
 
-        {/* Testimonials Grid */}
+        {/* User Needs Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {testimonials.map((testimonial, index) => (
-            <Card key={index} className="glass-card border-primary/20 hover:scale-105 transition-all duration-300 group">
+          {userNeeds.map((user, index) => (
+            <Card key={index} className="glass-card border-destructive/20 hover:scale-105 transition-all duration-300 group">
               <CardContent className="p-6">
                 {/* Quote Icon */}
-                <Quote className="h-8 w-8 text-primary mb-4 group-hover:text-gold transition-colors duration-300" />
+                <Quote className="h-8 w-8 text-destructive mb-4 group-hover:text-primary transition-colors duration-300" />
                 
                 {/* Main Quote */}
-                <blockquote className="text-lg font-bold mb-4 gradient-primary bg-clip-text text-transparent">
-                  "{testimonial.quote}"
+                <blockquote className="text-lg font-bold mb-4 text-destructive">
+                  "{user.quote}"
                 </blockquote>
                 
                 {/* Story */}
                 <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
-                  {testimonial.story}
+                  {user.story}
                 </p>
                 
-                {/* Gold Earned Badge */}
-                <Badge className="gradient-gold border-gold/30 mb-4">
-                  <Star className="h-3 w-3 mr-1" />
-                  {testimonial.goldEarned} Gold Earned
+                {/* Need Badge */}
+                <Badge variant="outline" className="border-primary/30 text-primary mb-4">
+                  {user.need}
                 </Badge>
                 
                 {/* User Info */}
                 <div className="flex items-center gap-3 pt-4 border-t border-border">
-                  <div className="w-10 h-10 rounded-full gradient-primary flex items-center justify-center">
-                    <span className="text-sm font-bold text-primary-foreground">
-                      {testimonial.avatar}
+                  <div className="w-10 h-10 rounded-full bg-muted flex items-center justify-center">
+                    <span className="text-sm font-bold text-muted-foreground">
+                      {user.avatar}
                     </span>
                   </div>
                   <div>
-                    <div className="font-semibold">{testimonial.name}, {testimonial.age}</div>
+                    <div className="font-semibold">{user.name}, {user.age}</div>
                     <div className="text-xs text-muted-foreground">
-                      {testimonial.profession} • {testimonial.location}
+                      {user.profession} • {user.location}
                     </div>
                   </div>
                 </div>
@@ -101,24 +100,38 @@ const Testimonials = () => {
           ))}
         </div>
 
-        {/* Beta Stats */}
+        {/* Solution Preview */}
         <Card className="glass-card border-secondary/20 p-8">
           <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold mb-2">Beta Program Results</h3>
-            <p className="text-muted-foreground">Real impact from our early adopters</p>
+            <h3 className="text-2xl font-bold mb-2">Here's How We're Solving This</h3>
+            <p className="text-muted-foreground">Building the financial app you actually want to use</p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {betaStats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl font-bold gradient-primary bg-clip-text text-transparent mb-2">
-                  {stat.number}
-                </div>
-                <div className="text-sm text-muted-foreground">
-                  {stat.label}
-                </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="text-3xl font-bold gradient-primary bg-clip-text text-transparent mb-2">
+                Simple UI
               </div>
-            ))}
+              <div className="text-sm text-muted-foreground">
+                Clean, modern design that makes sense
+              </div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold gradient-primary bg-clip-text text-transparent mb-2">
+                Smart Tracking
+              </div>
+              <div className="text-sm text-muted-foreground">
+                Automated credit card & bill management
+              </div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold gradient-primary bg-clip-text text-transparent mb-2">
+                AI Guidance
+              </div>
+              <div className="text-sm text-muted-foreground">
+                Personal financial coach in your pocket
+              </div>
+            </div>
           </div>
         </Card>
 
