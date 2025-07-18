@@ -1,12 +1,27 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import TrezrHero from "@/components/TrezrHero";
+import ProblemSolution from "@/components/ProblemSolution";
+import FeaturesGrid from "@/components/FeaturesGrid";
+import HowItWorks from "@/components/HowItWorks";
+import MicroinvestingPower from "@/components/MicroinvestingPower";
+import HabitEngine from "@/components/HabitEngine";
+import Testimonials from "@/components/Testimonials";
+import ComparisonTable from "@/components/ComparisonTable";
+import FinalCTA from "@/components/FinalCTA";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <TrezrHero />
+      <ProblemSolution />
+      <FeaturesGrid />
+      <HowItWorks />
+      <MicroinvestingPower />
+      <HabitEngine />
+      <Testimonials />
+      <ComparisonTable />
+      <FinalCTA />
+      <Footer />
     </div>
   );
 };
