@@ -132,7 +132,7 @@ const FinalCTA = () => {
                     <Star className="h-5 w-5 text-gold-foreground" />
                     <div className="text-gold-foreground">
                       <p className="font-semibold text-sm">Early Bird Bonus</p>
-                      <p className="text-xs opacity-80">Get ₹500 gold when you complete your first week!</p>
+                      <p className="text-xs opacity-80">Get ₹50 gold when you complete your first week!</p>
                     </div>
                   </div>
                 </Card>

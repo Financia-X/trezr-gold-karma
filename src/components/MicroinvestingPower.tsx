@@ -56,7 +56,7 @@ const MicroinvestingPower = () => {
                   <div className="w-2 h-2 bg-secondary rounded-full mt-2"></div>
                   <div>
                     <p className="font-medium">Trezr rounds up your daily transactions</p>
-                    <p className="text-sm text-muted-foreground">₹47 coffee becomes ₹50, ₹7 invested</p>
+                    <p className="text-sm text-muted-foreground">₹43 coffee becomes ₹50, ₹7 invested</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">

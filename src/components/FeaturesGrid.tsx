@@ -26,7 +26,7 @@ const FeaturesGrid = () => {
           icon: TrendingUp,
           title: "Round-up & Auto-investing",
           description: "Every purchase rounds up and invests the spare change automatically",
-          highlight: "₹7 daily = ₹25,000 yearly"
+          highlight: "₹70 daily = ₹25,000 yearly"
         },
         {
           icon: Coins,
