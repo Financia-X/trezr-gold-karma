@@ -50,25 +50,25 @@ const TrezrHero = () => {
               
               <div className="space-y-4">
                 <h1 className="text-5xl lg:text-7xl font-bold leading-tight tracking-tight">
-                  <span className="gradient-primary bg-clip-text text-transparent font-extrabold">
+                  <span className="text-white font-extrabold animate-pulse">
                     Wealth That Grows
                   </span>
                   <br />
-                  <span className="text-foreground font-light">With Every Good</span>
+                  <span className="text-white/90 font-light">With Every Good</span>
                   <br />
-                  <span className="gradient-gold bg-clip-text text-transparent font-black italic">
+                  <span className="gradient-gold bg-clip-text text-transparent font-black italic animate-bounce">
                     Habit.
                   </span>
                 </h1>
                 
                 <div className="space-y-3">
-                  <p className="text-xl lg:text-2xl text-muted-foreground max-w-2xl font-light">
+                  <p className="text-xl lg:text-2xl text-white/80 max-w-2xl font-light animate-fade-in">
                     Build wealth through small, consistent habits.
                   </p>
-                  <p className="text-lg lg:text-xl gradient-gold bg-clip-text text-transparent font-semibold">
+                  <p className="text-lg lg:text-xl gradient-gold bg-clip-text text-transparent font-semibold animate-fade-in">
                     Every bill paid. Every rupee saved. Every smart choice rewarded.
                   </p>
-                  <p className="text-base lg:text-lg text-muted-foreground font-normal">
+                  <p className="text-base lg:text-lg text-white/70 font-normal animate-fade-in">
                     Your AI-powered financial companion that turns good habits into real wealth.
                   </p>
                 </div>
