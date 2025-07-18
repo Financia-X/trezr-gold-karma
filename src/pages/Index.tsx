@@ -22,10 +22,14 @@ const Index = () => {
       <ProblemSolution />
       
       <SectionSeparator />
-      <HowItWorks />
+      <div id="how-it-works">
+        <HowItWorks />
+      </div>
       
       <SectionSeparator />
-      <FeaturesGrid />
+      <div id="features">
+        <FeaturesGrid />
+      </div>
       
       <SectionSeparator />
       <HabitEngine />
@@ -34,7 +38,9 @@ const Index = () => {
       <MicroinvestingPower />
       
       <SectionSeparator />
-      <Testimonials />
+      <div id="testimonials">
+        <Testimonials />
+      </div>
       
       <SectionSeparator />
       <ComparisonTable />

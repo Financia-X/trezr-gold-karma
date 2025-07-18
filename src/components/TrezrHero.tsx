@@ -5,11 +5,11 @@ import heroIsometric from "@/assets/hero-isometric.png";
 
 const TrezrHero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/5 to-accent/5 animate-pulse" />
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-primary/5 animate-moving-gradient" style={{ backgroundSize: '200% 200%' }} />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,hsl(262_83%_65%_/_0.1),transparent_70%)] animate-float" />
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-secondary/10 animate-[fade-in_4s_ease-in-out_infinite_alternate]" />
+      <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-secondary/10 animate-[moving-gradient_6s_ease-in-out_infinite]" style={{ backgroundSize: '200% 200%' }} />
       
       <div className="container relative z-10 mx-auto px-4 pt-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
