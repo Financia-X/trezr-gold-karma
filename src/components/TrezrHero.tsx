@@ -6,9 +6,10 @@ import heroIsometric from "@/assets/hero-isometric.png";
 const TrezrHero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
-      {/* Enhanced Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/5 to-accent/5" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,hsl(262_83%_65%_/_0.1),transparent_70%)]" />
+      {/* Animated Background Effects */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/5 to-accent/5 animate-pulse" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,hsl(262_83%_65%_/_0.1),transparent_70%)] animate-float" />
+      <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-secondary/10 animate-[fade-in_4s_ease-in-out_infinite_alternate]" />
       
       <div className="container relative z-10 mx-auto px-4 pt-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -73,7 +74,7 @@ const TrezrHero = () => {
             <div className="grid grid-cols-3 gap-6">
               <div className="text-center">
                 <div className="w-12 h-12 mx-auto mb-2 rounded-xl bg-gradient-gold flex items-center justify-center">
-                  <Trophy className="h-6 w-6 text-gold-foreground" />
+                  <Gift className="h-6 w-6 text-gold-foreground" />
                 </div>
                 <div className="text-lg font-bold text-gold">Achievements</div>
                 <div className="text-sm text-muted-foreground">Unlock rewards</div>

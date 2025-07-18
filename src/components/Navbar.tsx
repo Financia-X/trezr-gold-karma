@@ -35,19 +35,19 @@ const Navbar = () => {
           <NavigationMenu className="hidden md:flex">
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuLink href="#features" className="px-4 py-2 hover:text-primary transition-colors cursor-pointer">
+                <a href="#features" className="px-4 py-2 hover:text-primary transition-colors cursor-pointer inline-block">
                   Features
-                </NavigationMenuLink>
+                </a>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuLink href="#how-it-works" className="px-4 py-2 hover:text-primary transition-colors cursor-pointer">
+                <a href="#how-it-works" className="px-4 py-2 hover:text-primary transition-colors cursor-pointer inline-block">
                   How it Works
-                </NavigationMenuLink>
+                </a>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuLink href="#testimonials" className="px-4 py-2 hover:text-primary transition-colors cursor-pointer">
+                <a href="#testimonials" className="px-4 py-2 hover:text-primary transition-colors cursor-pointer inline-block">
                   Testimonials
-                </NavigationMenuLink>
+                </a>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
