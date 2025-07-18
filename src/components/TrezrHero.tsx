@@ -69,8 +69,8 @@ const TrezrHero = () => {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button size="lg" className="gradient-primary hover:scale-105 transition-all duration-300 px-8 py-6 text-lg font-semibold animate-glow">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
+              <Button size="lg" className="gradient-primary hover:scale-[1.02] transition-all duration-300 px-8 py-6 text-lg font-semibold animate-glow">
                 Start My Journey
               </Button>
               <Button variant="outline" size="lg" className="border-primary/30 hover:bg-primary/10 px-8 py-6 text-lg">
