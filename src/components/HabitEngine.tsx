@@ -124,12 +124,86 @@ const HabitEngine = () => {
             </Card>
           </div>
 
-          {/* Right: Active Milestones */}
-          <div>
-            <Card className="glass-card border-primary/20 mb-8">
+          {/* Right: Community Leaderboard & Milestones */}
+          <div className="space-y-8">
+            {/* Community Leaderboard */}
+            <Card className="glass-card border-gold/20">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3 text-gold">
+                  <Trophy className="h-6 w-6" />
+                  Top Performers
+                </CardTitle>
+                <p className="text-muted-foreground">Join thousands building wealth through healthy financial habits</p>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between p-3 glass-card border-gold/20 rounded-lg">
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-full bg-gradient-gold flex items-center justify-center text-xs font-bold">PS</div>
+                      <div>
+                        <div className="font-semibold">Priya S. 💎</div>
+                        <div className="text-sm text-muted-foreground">12,450 points</div>
+                      </div>
+                    </div>
+                    <div className="text-secondary font-bold">+2.1k this week</div>
+                  </div>
+                  
+                  <div className="flex items-center justify-between p-3 glass-card border-secondary/20 rounded-lg">
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-full bg-gradient-success flex items-center justify-center text-xs font-bold">#2</div>
+                      <div>
+                        <div className="font-semibold">Arjun K. 🏆</div>
+                        <div className="text-sm text-muted-foreground">11,890 points</div>
+                      </div>
+                    </div>
+                    <div className="text-secondary font-bold">+1.8k this week</div>
+                  </div>
+                  
+                  <div className="flex items-center justify-between p-3 glass-card border-primary/20 rounded-lg">
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-full bg-gradient-primary flex items-center justify-center text-xs font-bold">#3</div>
+                      <div>
+                        <div className="font-semibold">Sneha M. ⭐</div>
+                        <div className="text-sm text-muted-foreground">10,230 points</div>
+                      </div>
+                    </div>
+                    <div className="text-secondary font-bold">+1.5k this week</div>
+                  </div>
+                  
+                  <div className="flex items-center justify-between p-3 gradient-primary rounded-lg border border-primary/30">
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-xs font-bold">#4</div>
+                      <div>
+                        <div className="font-semibold text-primary-foreground">You 🎯</div>
+                        <div className="text-sm text-primary-foreground/80">8,760 points</div>
+                      </div>
+                    </div>
+                    <div className="text-gold font-bold">+980 this week</div>
+                  </div>
+                </div>
+                
+                <div className="grid grid-cols-3 gap-4 pt-4 border-t border-border">
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-gold">124</div>
+                    <div className="text-xs text-muted-foreground">Rewards Earned</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-primary">8,760</div>
+                    <div className="text-xs text-muted-foreground">Total Points</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-secondary">12</div>
+                    <div className="text-xs text-muted-foreground">Badges</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Active Milestones */}
+            <Card className="glass-card border-primary/20">
               <CardHeader>
                 <CardTitle className="flex items-center gap-3">
-                  <Trophy className="h-6 w-6 text-gold" />
+                  <Target className="h-6 w-6 text-primary" />
                   Active Milestones
                 </CardTitle>
                 <p className="text-muted-foreground">Your current financial challenges</p>
@@ -169,35 +243,6 @@ const HabitEngine = () => {
                     )}
                   </div>
                 ))}
-              </CardContent>
-            </Card>
-
-            {/* Habit Streak */}
-            <Card className="gradient-primary border-primary/30">
-              <CardContent className="p-6 text-center">
-                <div className="mb-4">
-                  <div className="text-4xl font-bold text-primary-foreground mb-2">12</div>
-                  <p className="text-primary-foreground/80">Day streak of good financial habits</p>
-                </div>
-                
-                <div className="flex justify-center gap-2 mb-4">
-                  {[...Array(14)].map((_, i) => (
-                    <div 
-                      key={i}
-                      className={`w-3 h-3 rounded-full ${
-                        i < 12 ? 'bg-gold' : 'bg-primary-foreground/30'
-                      }`}
-                    />
-                  ))}
-                </div>
-                
-                <p className="text-primary-foreground/80 text-sm mb-4">
-                  2 more days to unlock the "Consistency Champion" badge and ₹500 bonus gold!
-                </p>
-                
-                <Button variant="secondary" size="sm">
-                  View All Achievements
-                </Button>
               </CardContent>
             </Card>
           </div>

@@ -54,16 +54,24 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="flex items-center gap-4">
-            <form action="https://formspree.io/f/xwpbggnw" method="POST" className="hidden sm:block">
-              <input type="email" name="email" placeholder="Enter email" required className="hidden" />
-              <Button 
-                type="submit"
-                size="sm" 
-                className="gradient-primary hover:scale-105 transition-all duration-300"
-              >
-                Join Waitlist
-              </Button>
-            </form>
+            <div className="hidden sm:block">
+              <form action="https://formspree.io/f/xwpbggnw" method="POST" className="flex gap-2">
+                <input 
+                  type="email" 
+                  name="email" 
+                  placeholder="Email" 
+                  required 
+                  className="px-3 py-1 rounded border border-primary/30 bg-background/50 text-sm w-32"
+                />
+                <Button 
+                  type="submit"
+                  size="sm" 
+                  className="gradient-primary hover:scale-105 transition-all duration-300"
+                >
+                  Join
+                </Button>
+              </form>
+            </div>
             
             {/* Mobile Menu Button */}
             <Button
@@ -90,8 +98,14 @@ const Navbar = () => {
               <a href="#testimonials" className="px-4 py-2 hover:text-primary transition-colors">
                 Testimonials
               </a>
-              <form action="https://formspree.io/f/xwpbggnw" method="POST" className="px-4">
-                <input type="email" name="email" placeholder="Enter email" required className="hidden" />
+              <form action="https://formspree.io/f/xwpbggnw" method="POST" className="px-4 space-y-2">
+                <input 
+                  type="email" 
+                  name="email" 
+                  placeholder="Enter your email" 
+                  required 
+                  className="w-full px-3 py-2 rounded border border-primary/30 bg-background text-sm"
+                />
                 <Button 
                   type="submit"
                   size="sm" 

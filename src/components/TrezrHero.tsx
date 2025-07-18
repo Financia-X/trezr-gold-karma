@@ -10,57 +10,6 @@ const TrezrHero = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/5 to-accent/5" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,hsl(262_83%_65%_/_0.1),transparent_70%)]" />
       
-      {/* Animated Gaming Elements - Positioned for 14" laptops */}
-      <div className="absolute top-24 left-4 lg:left-10 animate-float hidden lg:block">
-        <Card className="glass-card p-3 border-gold/30 shadow-lg shadow-gold/20">
-          <div className="flex items-center gap-2">
-            <div className="w-6 h-6 rounded-full bg-gradient-gold flex items-center justify-center">
-              <Trophy className="h-3 w-3 text-gold-foreground" />
-            </div>
-            <div>
-              <div className="text-xs font-bold text-gold">Level Up!</div>
-              <div className="text-xs text-muted-foreground">+₹250 Gold</div>
-            </div>
-          </div>
-        </Card>
-      </div>
-      
-      <div className="absolute top-32 right-4 lg:right-16 animate-float hidden lg:block" style={{ animationDelay: "2s" }}>
-        <Card className="glass-card p-3 border-secondary/30 shadow-lg shadow-secondary/20">
-          <div className="flex items-center gap-2">
-            <div className="w-6 h-6 rounded-full bg-gradient-success flex items-center justify-center">
-              <TrendingUp className="h-3 w-3 text-white" />
-            </div>
-            <div>
-              <div className="text-xs font-bold text-secondary">Streak</div>
-              <div className="text-xs text-muted-foreground">7 days</div>
-            </div>
-          </div>
-        </Card>
-      </div>
-
-      <div className="absolute bottom-40 left-4 lg:left-20 animate-float hidden lg:block" style={{ animationDelay: "4s" }}>
-        <Card className="glass-card p-3 border-primary/30 shadow-lg shadow-primary/20">
-          <div className="flex items-center gap-2">
-            <div className="w-6 h-6 rounded-full bg-gradient-primary flex items-center justify-center">
-              <Shield className="h-3 w-3 text-white" />
-            </div>
-            <div>
-              <div className="text-xs font-bold text-primary">+15 Credit</div>
-            </div>
-          </div>
-        </Card>
-      </div>
-
-      <div className="absolute top-40 right-8 lg:right-32 animate-float hidden lg:block" style={{ animationDelay: "1s" }}>
-        <Card className="glass-card p-2 border-accent/30 shadow-lg shadow-accent/20">
-          <div className="flex items-center gap-1">
-            <Gift className="h-4 w-4 text-accent" />
-            <span className="text-xs font-medium">Daily</span>
-          </div>
-        </Card>
-      </div>
-
       <div className="container relative z-10 mx-auto px-4 pt-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -101,15 +50,24 @@ const TrezrHero = () => {
             </div>
 
             <div className="flex justify-center lg:justify-start">
-              <form action="https://formspree.io/f/xwpbggnw" method="POST" className="w-full max-w-md">
-                <Button 
-                  type="submit"
-                  size="lg" 
-                  className="gradient-primary hover:scale-[1.02] transition-all duration-300 px-8 py-6 text-lg font-semibold animate-glow w-full shadow-lg shadow-primary/30"
-                >
-                  Start Your Financial Game
-                </Button>
-              </form>
+              <div className="w-full max-w-md">
+                <form action="https://formspree.io/f/xwpbggnw" method="POST" className="space-y-3">
+                  <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="Enter your email" 
+                    required 
+                    className="w-full px-4 py-3 rounded-lg bg-background/10 border border-primary/30 text-white placeholder:text-white/60 focus:outline-none focus:border-primary"
+                  />
+                  <Button 
+                    type="submit"
+                    size="lg" 
+                    className="gradient-primary hover:scale-[1.02] transition-all duration-300 px-8 py-6 text-lg font-semibold animate-glow w-full shadow-lg shadow-primary/30"
+                  >
+                    Start Your Financial Game
+                  </Button>
+                </form>
+              </div>
             </div>
 
             {/* Gaming Features Grid */}

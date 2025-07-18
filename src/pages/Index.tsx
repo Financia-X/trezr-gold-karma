@@ -19,9 +19,6 @@ const Index = () => {
       <TrezrHero />
       
       <SectionSeparator />
-      <CommunityLeaderboard />
-      
-      <SectionSeparator />
       <ProblemSolution />
       
       <SectionSeparator />
