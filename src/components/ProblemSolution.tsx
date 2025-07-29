@@ -11,9 +11,9 @@ const ProblemSolution = () => {
             💸 Finance is broken for our generation
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            The Problem: <span className="text-destructive">Finance Apps Are Boring & Complex</span>
+            The Problem: <span className="text-destructive">Finance is Complex</span>
             <br />
-            The Solution: <span className="gradient-primary bg-clip-text text-transparent">Make Finance Fun & Social</span>
+            The Solution: <span className="gradient-primary bg-clip-text text-transparent">Make it Simple</span>
           </h2>
         </div>
 

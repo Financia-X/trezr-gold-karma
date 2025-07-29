@@ -128,7 +128,7 @@ const FeaturesGrid = () => {
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             <span className="gradient-primary bg-clip-text text-transparent">
-              Four powerful systems working together to make you richer, smarter, and more financially confident.
+              Smart systems that grow your wealth.
             </span>
           </h2>
         </div>
