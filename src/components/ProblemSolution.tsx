@@ -11,9 +11,7 @@ const ProblemSolution = () => {
             💸 Finance is broken for our generation
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            The Problem: <span className="text-destructive">Finance is Complex</span>
-            <br />
-            The Solution: <span className="gradient-primary bg-clip-text text-transparent">Make it Simple</span>
+            <span className="gradient-primary bg-clip-text text-transparent">Trezr Makes Finance Simple, Fun and Rewarding</span>
           </h2>
         </div>
 
