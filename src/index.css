@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    /* Simplified Color Palette - Primary + Secondary Only */
+    /* Enhanced Color Palette - Purple, Blue, Yellow */
     --background: 210 20% 8%;
     --foreground: 0 0% 98%;
 
@@ -19,17 +19,17 @@
     --primary: 262 83% 65%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 262 83% 75%;
+    --secondary: 217 91% 60%;
     --secondary-foreground: 0 0% 98%;
 
-    --gold: 262 83% 85%;
+    --gold: 43 96% 65%;
     --gold-foreground: 210 20% 8%;
 
-    --accent: 262 83% 55%;
+    --accent: 190 85% 55%;
     --accent-foreground: 0 0% 98%;
 
-    --success: 262 83% 70%;
-    --warning: 262 83% 50%;
+    --success: 217 91% 60%;
+    --warning: 43 96% 65%;
     --danger: 0 84% 60%;
 
     --muted: 210 20% 20%;
@@ -44,12 +44,12 @@
 
     --radius: 1rem;
 
-    /* Simplified Gradients - Purple Variations Only */
-    --gradient-primary: linear-gradient(135deg, hsl(262 83% 65%), hsl(262 83% 55%));
-    --gradient-hero: linear-gradient(135deg, hsl(210 20% 8%) 0%, hsl(262 83% 65%) 50%, hsl(262 83% 75%) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(262 83% 85%), hsl(262 83% 75%));
-    --gradient-success: linear-gradient(135deg, hsl(262 83% 70%), hsl(262 83% 60%));
-    --gradient-accent: linear-gradient(135deg, hsl(262 83% 55%), hsl(262 83% 45%));
+    /* Enhanced Gradients - Purple, Blue, Yellow */
+    --gradient-primary: linear-gradient(135deg, hsl(262 83% 65%), hsl(217 91% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 20% 8%) 0%, hsl(262 83% 65%) 30%, hsl(217 91% 60%) 70%, hsl(43 96% 65%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(43 96% 65%), hsl(38 92% 55%));
+    --gradient-success: linear-gradient(135deg, hsl(217 91% 60%), hsl(190 85% 55%));
+    --gradient-accent: linear-gradient(135deg, hsl(190 85% 55%), hsl(217 91% 60%));
     --gradient-glass: linear-gradient(135deg, hsl(210 20% 10% / 0.8), hsl(210 20% 15% / 0.9));
 
     /* Animations */
