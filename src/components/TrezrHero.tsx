@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Sparkles, TrendingUp, Shield, Zap, Trophy, Target, Gift } from "lucide-react";
-import heroDashboard from "@/assets/hero-dashboard-mockup.png";
+const heroDashboardUrl = "/lovable-uploads/18ded227-7f00-4468-a172-d692d00f77e0.png";
 
 const TrezrHero = () => {
   return (
@@ -100,7 +100,7 @@ const TrezrHero = () => {
           <div className="relative">
             <div className="relative z-10 flex justify-center">
               <img 
-                src={heroDashboard} 
+                src={heroDashboardUrl} 
                 alt="Trezr Mobile Dashboard - Financial Gaming App Interface" 
                 className="w-full max-w-lg mx-auto drop-shadow-2xl"
                 style={{ filter: 'drop-shadow(0 0 30px hsl(262 83% 65% / 0.3))' }}
