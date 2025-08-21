@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Sparkles, TrendingUp, Shield, Zap, Trophy, Target, Gift } from "lucide-react";
-const heroDashboardUrl = "/lovable-uploads/18ded227-7f00-4468-a172-d692d00f77e0.png";
+const heroDashboardUrl = "/lovable-uploads/d400fcb1-5851-4be8-95bd-0430637787a2.png";
 
 const TrezrHero = () => {
   return (
