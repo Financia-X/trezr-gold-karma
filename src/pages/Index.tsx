@@ -1,5 +1,8 @@
 import Navbar from "@/components/Navbar";
-import TrezrHero from "@/components/TrezrHero";
+import FinanciaHero from "@/components/FinanciaHero";
+import AppMockupSection from "@/components/AppMockupSection";
+import SocialCommunitySection from "@/components/SocialCommunitySection";
+import LearnSection from "@/components/LearnSection";
 import CommunityLeaderboard from "@/components/CommunityLeaderboard";
 import ProblemSolution from "@/components/ProblemSolution";
 import FeaturesGrid from "@/components/FeaturesGrid";
@@ -16,7 +19,10 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      <TrezrHero />
+      <FinanciaHero />
+      
+      <SectionSeparator />
+      <AppMockupSection />
       
       <SectionSeparator />
       <ProblemSolution />
@@ -41,6 +47,12 @@ const Index = () => {
       <div id="testimonials">
         <Testimonials />
       </div>
+      
+      <SectionSeparator />
+      <SocialCommunitySection />
+      
+      <SectionSeparator />
+      <LearnSection />
       
       <SectionSeparator />
       <ComparisonTable />

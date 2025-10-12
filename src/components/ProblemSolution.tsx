@@ -11,7 +11,7 @@ const ProblemSolution = () => {
             💸 Finance is broken for our generation
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            <span className="gradient-primary bg-clip-text text-transparent">Trezr Makes Finance Simple, Fun and Rewarding</span>
+            <span className="gradient-primary bg-clip-text text-transparent">Financia Makes Finance Simple, Fun and Rewarding</span>
           </h2>
         </div>
 
@@ -64,7 +64,7 @@ const ProblemSolution = () => {
             <div className="text-center lg:text-left">
               <h3 className="text-2xl font-bold text-secondary mb-6 flex items-center gap-3">
                 <CheckCircle2 className="h-7 w-7" />
-                The Trezr Way
+                The Financia Way
               </h3>
             </div>
             

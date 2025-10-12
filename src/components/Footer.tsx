@@ -60,7 +60,7 @@ const Footer = () => {
           <div className="lg:col-span-1 space-y-6">
             <div>
               <h3 className="text-2xl font-bold gradient-primary bg-clip-text text-transparent mb-2">
-                Trezr
+                Financia
               </h3>
               <p className="text-sm text-muted-foreground mb-4">
                 Your fallen angel for every financial good deed. 
@@ -76,7 +76,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4" />
-                <span>hello@trezr.in</span>
+                <span>hello@financia.in</span>
               </div>
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4" />
@@ -162,7 +162,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 border-t border-border">
           <div className="text-sm text-muted-foreground">
-            © 2024 Trezr Technologies Pvt. Ltd. All rights reserved.
+            © 2024 Financia Technologies Pvt. Ltd. All rights reserved.
           </div>
           
           <div className="flex items-center gap-6 text-sm text-muted-foreground">
@@ -183,7 +183,7 @@ const Footer = () => {
             <strong>Investment Disclaimer:</strong> Mutual fund investments are subject to market risks. 
             Read all scheme-related documents carefully. Past performance is not indicative of future results. 
             Digital gold investments are subject to price fluctuation and regulatory changes. 
-            Trezr does not guarantee returns and all investment decisions should be made after careful consideration.
+            Financia does not guarantee returns and all investment decisions should be made after careful consideration.
           </p>
         </div>
       </div>

@@ -72,7 +72,7 @@ const FinalCTA = () => {
               {/* Left: Benefits */}
               <div className="space-y-6">
                 <h3 className="text-2xl font-bold mb-6">
-                  What You Get When You Join Trezr
+                  What You Get When You Join Financia
                 </h3>
                 
                 <div className="space-y-4">

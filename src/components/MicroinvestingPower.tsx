@@ -55,7 +55,7 @@ const MicroinvestingPower = () => {
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-secondary rounded-full mt-2"></div>
                   <div>
-                    <p className="font-medium">Trezr rounds up your daily transactions</p>
+                    <p className="font-medium">Financia rounds up your daily transactions</p>
                     <p className="text-sm text-muted-foreground">₹43 coffee becomes ₹50, ₹7 invested</p>
                   </div>
                 </div>
@@ -179,7 +179,7 @@ const MicroinvestingPower = () => {
         {/* Bottom Quote */}
         <div className="text-center mt-16">
           <p className="text-2xl font-bold text-muted-foreground">
-            "Trezr users earn an average{" "}
+            "Financia users earn an average{" "}
             <span className="gradient-gold bg-clip-text text-transparent">2.5% extra in Digital Gold</span>
             {" "}just by doing the right things."
           </p>

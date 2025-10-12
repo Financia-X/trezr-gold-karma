@@ -42,7 +42,7 @@ const HowItWorks = () => {
             🚀 Simple Process
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            How <span className="gradient-primary bg-clip-text text-transparent">Trezr</span> Works
+            How <span className="gradient-primary bg-clip-text text-transparent">Financia</span> Works
           </h2>
           <p className="text-xl text-white/80 max-w-2xl mx-auto mb-8">
             Building wealth has never been this simple. Get started in minutes and watch your money grow automatically.

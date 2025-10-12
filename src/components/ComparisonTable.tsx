@@ -91,7 +91,7 @@ const ComparisonTable = () => {
             📊 How We Compare
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Why Choose Trezr?
+            Why Choose Financia?
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             We don't just compete — we revolutionize how you think about money.
@@ -117,7 +117,7 @@ const ComparisonTable = () => {
                     <th className="text-center p-4 font-semibold gradient-primary bg-clip-text text-transparent">
                       <div className="flex items-center justify-center gap-2">
                         <Star className="h-4 w-4 text-gold" />
-                        Trezr
+                        Financia
                       </div>
                     </th>
                   </tr>

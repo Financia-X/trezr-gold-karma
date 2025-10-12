@@ -24,26 +24,17 @@ const TrezrHero = () => {
               <div className="space-y-4">
                 <h1 className="text-5xl lg:text-7xl font-bold leading-tight tracking-tight">
                   <span className="text-white font-extrabold">
-                    Wealth That Grows
+                    Your Money.
                   </span>
                   <br />
                   <span className="gradient-primary bg-clip-text text-transparent font-black">
-                    With Every Good
-                  </span>
-                  <br />
-                  <span className="gradient-gold bg-clip-text text-transparent font-black italic">
-                    Habit.
+                    Unified.
                   </span>
                 </h1>
                 
                 <div className="space-y-4">
                   <p className="text-xl lg:text-2xl text-white/90 max-w-2xl font-medium">
-                    Level up your finances with <span className="text-secondary font-bold">achievements</span>, 
-                    <span className="text-gold font-bold"> rewards</span>, and 
-                    <span className="text-primary font-bold"> real wealth building</span>.
-                  </p>
-                  <p className="text-lg text-white/70 max-w-xl">
-                    Every bill paid. Every rupee saved. Every smart choice rewarded.
+                    Financia brings all your financial data — spending, loans, investments, and goals — into one AI-driven dashboard.
                   </p>
                 </div>
               </div>
@@ -59,13 +50,23 @@ const TrezrHero = () => {
                     required 
                     className="w-full px-4 py-3 rounded-lg bg-background/10 border border-primary/30 text-white placeholder:text-white/60 focus:outline-none focus:border-primary"
                   />
-                  <Button 
-                    type="submit"
-                    size="lg" 
-                    className="gradient-primary hover:scale-[1.02] transition-all duration-300 px-8 py-6 text-lg font-semibold animate-glow w-full shadow-lg shadow-primary/30"
-                  >
-                    Start Your Financial Game
-                  </Button>
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <Button 
+                      type="submit"
+                      size="lg" 
+                      className="gradient-primary hover:scale-[1.02] transition-all duration-300 px-8 py-6 text-lg font-semibold animate-glow flex-1 shadow-lg shadow-primary/30"
+                    >
+                      Join the Waitlist
+                    </Button>
+                    <Button 
+                      type="button"
+                      size="lg" 
+                      variant="outline"
+                      className="border-primary/30 text-white hover:bg-primary/10 px-8 py-6 text-lg font-semibold flex-1"
+                    >
+                      Explore the Future
+                    </Button>
+                  </div>
                 </form>
               </div>
             </div>
@@ -101,7 +102,7 @@ const TrezrHero = () => {
             <div className="relative z-10 flex justify-center">
               <img 
                 src={heroDashboardUrl} 
-                alt="Trezr Mobile Dashboard - Financial Gaming App Interface" 
+                alt="Financia Mobile Dashboard - Unified Financial Management App" 
                 className="w-full max-w-sm mx-auto drop-shadow-2xl"
                 style={{ filter: 'drop-shadow(0 0 30px hsl(262 83% 65% / 0.3))' }}
               />

@@ -24,7 +24,7 @@ const Navbar = () => {
               <Zap className="h-6 w-6 text-white" />
             </div>
             <span className="text-2xl font-bold gradient-primary bg-clip-text text-transparent">
-              Trezr
+              Financia
             </span>
             <Badge variant="secondary" className="text-xs hidden sm:block">
               AI Finance
