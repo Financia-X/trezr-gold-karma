@@ -8,8 +8,9 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { Zap, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import { useState } from "react";
+import financiaLogo from "@/assets/financia-logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,9 +21,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="gradient-primary p-2 rounded-xl">
-              <Zap className="h-6 w-6 text-white" />
-            </div>
+            <img 
+              src={financiaLogo} 
+              alt="Financia Logo" 
+              className="h-10 w-10"
+            />
             <span className="text-2xl font-bold gradient-primary bg-clip-text text-transparent">
               Financia
             </span>
